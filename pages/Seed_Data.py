@@ -11,13 +11,13 @@ if submitted:
 
 
     # UC#6 F#3 - Apply Discount
-    columns = ["discount_id", "discount_value", "expiry_date"]
+    columns = ["discount_id", "discount_value", "expiry_date", "code"]
     data = [
-        {"discount_id": "1", "discount_value": "10", "expiry_date": "2024-06-01"},
-        {"discount_id": "2", "discount_value": "20", "expiry_date": "2023-12-31"},
-        {"discount_id": "3", "discount_value": "0", "expiry_date": "2024-01-15"},
-        {"discount_id": "4", "discount_value": "15", "expiry_date": "2024-07-01"},
-        {"discount_id": "5", "discount_value": "5", "expiry_date": "2023-11-30"}
+        {"discount_id": "1", "discount_value": "10", "expiry_date": "2024-06-01", "code": "CullinaryConnect224"},
+        {"discount_id": "2", "discount_value": "20", "expiry_date": "2023-12-31", "code": "djsk"},
+        {"discount_id": "3", "discount_value": "0", "expiry_date": "2024-01-15", "code": "djsk"},
+        {"discount_id": "4", "discount_value": "15", "expiry_date": "2024-07-01", "code": "djsk"},
+        {"discount_id": "5", "discount_value": "5", "expiry_date": "2023-11-30", "code": "djsk"}
     ]
     table_name = util.create_seed_data(conn, "discount", columns, data)
 
